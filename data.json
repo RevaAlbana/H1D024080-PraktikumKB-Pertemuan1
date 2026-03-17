@@ -1,0 +1,77 @@
+[
+    {
+        "merk": "Axioo MyBook 14F",
+        "kategori": ["ringan"],
+        "harga": 3800000
+    },
+    {
+        "merk": "Lenovo IdeaPad 1 (Celeron)",
+        "kategori": ["ringan"],
+        "harga": 4200000
+    },
+    {
+        "merk": "Acer Aspire 3 (Intel N4020)",
+        "kategori": ["ringan"],
+        "harga": 4300000
+    },
+    {
+        "merk": "ASUS Vivobook Go 14",
+        "kategori": ["ringan"],
+        "harga": 4500000
+    },
+    {
+        "merk": "HP 14s (Intel Celeron)",
+        "kategori": ["ringan"],
+        "harga": 4600000
+    },
+    {
+        "merk": "MSI Modern 14 (Core i3)",
+        "kategori": ["ringan", "menengah"],
+        "harga": 6500000
+    },
+    {
+        "merk": "Lenovo IdeaPad Slim 3 (Ryzen 3)",
+        "kategori": ["ringan", "menengah"],
+        "harga": 7200000
+    },
+    {
+        "merk": "ASUS Vivobook 14 (Core i5)",
+        "kategori": ["menengah"],
+        "harga": 8500000
+    },
+    {
+        "merk": "Acer Swift 3 (Ryzen 5)",
+        "kategori": ["menengah"],
+        "harga": 9200000
+    },
+    {
+        "merk": "HP Pavilion 14 (Core i5)",
+        "kategori": ["menengah"],
+        "harga": 9800000
+    },
+    {
+        "merk": "Lenovo IdeaPad Gaming 3",
+        "kategori": ["menengah", "berat"],
+        "harga": 11500000
+    },
+    {
+        "merk": "HP Victus 15 (GTX 1650)",
+        "kategori": ["menengah", "berat"],
+        "harga": 12500000
+    },
+    {
+        "merk": "Acer Nitro 5 (RTX 3050)",
+        "kategori": ["menengah", "berat"],
+        "harga": 14000000
+    },
+    {
+        "merk": "MSI Katana GF66 (RTX 3060)",
+        "kategori": ["berat"],
+        "harga": 16500000
+    },
+    {
+        "merk": "ASUS ROG Strix G15",
+        "kategori": ["berat"],
+        "harga": 21000000
+    }
+]

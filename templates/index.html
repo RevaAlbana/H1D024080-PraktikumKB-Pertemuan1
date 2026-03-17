@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Rekomendasi Laptop</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Pakar Rekomendasi Laptop</h2>
+        
+        <form method="POST">
+            <label for="budget">Budget:</label>
+            <select name="budget" id="budget" required>
+                <option value="" disabled selected>-- Pilih Budget --</option>
+                <option value="5000000">Di bawah Rp 5 Juta</option>
+                <option value="10000000">Rp 5 Juta - Rp 10 Juta</option>
+                <option value="20000000">Di atas Rp 10 Juta</option>
+            </select>
+
+            <label for="kebutuhan">Kebutuhan Utama:</label>
+            <select name="kebutuhan" id="kebutuhan" required>
+                <option value="" disabled selected>-- Pilih Kebutuhan --</option>
+                <option value="ringan">Kebutuhan ringan (Ngetik, Browsing)</option>
+                <option value="menengah">Kebutuhan menengah (Coding, Kuliah)</option>
+                <option value="berat">Kebutuhan berat (Main Game, Desain 3D)</option>
+            </select>
+
+            <button type="submit">Cari Sekarang</button>
+        </form>
+
+        {% if error or rekomendasi %}
+            <hr>
+            
+            {% if error %}
+                <div class="error">
+                    {{ error }}
+                </div>
+            {% endif %}
+
+            {% if rekomendasi %}
+                <div class="hasil-box">
+                    <h3>Hasil Pencarian:</h3>
+                    <ul>
+                        {% for rec in rekomendasi %}
+                            <li><b>{{ rec.merk }}</b><br>Estimasi Harga: Rp {{ "{:,.0f}".format(rec.harga).replace(',', '.') }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endif %}
+        {% endif %}
+    </div>
+
+</body>
+</html>
